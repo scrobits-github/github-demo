@@ -3,16 +3,14 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/one', (req, res) => {
-    console.log("heelo");
-    res.send('Hello World One');
+app.get('/user', (req, res) => {
+    res.send("hello World")
 })
 
-app.get('/two', (req,res) => {
-    res.send("Hello World Two");
-});
-app.get('/', (req, res) => {
-    res.send('Hello World');
+console.log("Hello Pritam")
+
+app.get('/data', (req, res) => {
+    res.send("hello data")
 })
 
 app.listen(3000, () => {
