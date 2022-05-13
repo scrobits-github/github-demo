@@ -4,7 +4,12 @@ const app = express();
 app.use(express.json());
 
 app.get('/one', (req, res) => {
+    console.log("heelo");
     res.send('Hello World One');
+})
+
+app.get('/', (req, res) => {
+    res.send('Hello World');
 })
 
 app.listen(3000, () => {
